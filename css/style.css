@@ -25,6 +25,14 @@
   src: url(../fonts/outfit-regular.woff2);
 }
 
+.homepage--active {
+  color: #feb386;
+}
+
+.homepage--unactive {
+  color: #e4dce4;
+}
+
 *::-webkit-scrollbar {
   display: none;
 }
@@ -35,16 +43,23 @@
   margin: 0 0 0.3vw;
   padding: var(--index) 0 var(--index);
   text-align: center;
-  
-  /* background: ; */
 }
+
+
+.menu-main li {
+  display: inline-block;
+  vertical-align: middle; /* Гарантирует: все пункты — по центру строки */
+}
+
+
 .menu-main li {display: inline-block;}
 .menu-main li:after {
   content: "|";
   color: #9c9c9c;
   /* color: var(--color-header); */
   display: inline-block;
-  vertical-align:top;
+  vertical-align:middle;
+
 }
 .menu-main li:last-child:after {content: none;}
 .menu-main a {
@@ -58,6 +73,7 @@
   text-transform: uppercase;
   display: inline-block;
   transition: color .2s;
+  line-height: 1.6;
 }
 .menu-main a, .menu-main a:visited {color: #e4dce4;}
 .menu-main a.current, .menu-main a:hover{color: #feb386;}
@@ -76,10 +92,39 @@
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
 
+.logo-wrapper {
+  flex-shrink: 0; /* Не сжимается */
+  display: flex;
+  align-items: center;
+  width: 5vw;
+  justify-content: center;
+}
+
+.logo-link {
+  display: block;
+  width: 3em;
+  height: 3em;
+  transition: color .2s;
+
+}
+
+.icon-home {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.logo-link:hover {
+  color: #feb386;
+}
+
 
 header {
   width: 100vw;
   height: min-content;
+  justify-content: flex-start;
+  display: flex;
+
 }
 
 body {
