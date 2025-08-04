@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+    .photo-chapter {
+        min-width: 40%;
+    }
+    .descript-photo-wrap {
+        margin: 0 0 0 var(--index);
+    }
+}
+
+@media (max-width: 1039px) {
+    .menu-main a:before,
+    .menu-main a:after {
+         bottom: -0.1vh;
+        
+    }
+}
+
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+    padding: 0.1vw 0 0.1vw; 
+    margin: 0 .5vh;
+    }
+
+    .photo-chapter {
+        min-width: 50%;
+    }
+
+    .photo-chapter > img{
+        max-width: 80%;
+    }
+
+    .descript-photo-wrap {
+        margin: -2vh 0 0 calc(var(--index));
+    }
+
+    .content {
+        height: 125vh;
+    }
+}
