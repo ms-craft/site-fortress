@@ -41,14 +41,15 @@
 .menu-main {
   list-style: none;
   margin: 0 0 0.3vw;
-  padding: var(--index) 0 var(--index);
+  padding: calc(var(--index)/2) 0 var(--index);
   text-align: center;
 }
 
 
 .menu-main li {
   display: inline-block;
-  vertical-align: middle; /* Гарантирует: все пункты — по центру строки */
+  /* vertical-align: middle; */
+  vertical-align: -3em;
 }
 
 
@@ -93,7 +94,7 @@
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}   
 
 .logo-wrapper {
-  flex-shrink: 0; /* Не сжимается */
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   width: 5vw;
@@ -105,7 +106,6 @@
   width: 3em;
   height: 3em;
   transition: color .2s;
-
 }
 
 .icon-home {
@@ -114,8 +114,10 @@
   fill: currentColor;
 }
 
-.logo-link:hover {
+.homepage--unactive:hover {
   color: #feb386;
+  transition: .8s;
+
 }
 
 
@@ -124,6 +126,7 @@ header {
   height: min-content;
   justify-content: flex-start;
   display: flex;
+
 
 }
 
@@ -183,4 +186,17 @@ body {
   min-width: 60%;
   max-width: 90%;
   max-height: 100%;
+}
+
+.map-wraper {
+  height: calc(var(--index) * 24);
+  width: 100%;
+  margin-top: var(--index);
+}
+
+.iframe-map {
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  margin: 5vh 0 5vw 5vw;
 }
