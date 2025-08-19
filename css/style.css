@@ -135,17 +135,22 @@ body {
   background: linear-gradient(90deg, rgba(140, 1, 1, 1) 1%, rgba(199, 87, 87, 1) 62%, rgba(237, 147, 83, 1) 100%);
 }
 
-.emptiness {
-  min-width: 70%;
+.logo-wrap {
+  width: 70%;
   height: min-content;
+  display: flex;
+  justify-content: right;
 }
 
+.logo-wrap > img {
+  width: calc(var(--index) * 5);
+}
 
 .content {
   width: 90vw;
   min-height: 88vh;
-  max-height: auto;
-  margin: 0 5vw 0 5vw;
+  /* max-height: auto; */
+  margin: 0 5vw 1vh 5vw;
   background-color: #9d999d;
   border-radius: var(--index);
 }
@@ -163,22 +168,56 @@ body {
 }
 
 .descript-photo-wrap {
-  display: flex;
-  height: 60vh;
+  /* display: flex; */
+  min-height: 60vh;
   width: 100%;
-  margin: calc(var(--index)) 0 0 var(--index);
+  margin: calc(var(--index) + 1vh) 0 0 var(--index);
   text-indent: calc(var(--index) / 2);
   text-align: justify;
 }
 
 .descritp-chapter {
-  min-width: 50%;
+  width: calc(99% - var(--index));
   height: min-content;
   font-size: calc(var(--index) / 1.2);
   color: white;
 }
 
-.photo-chapter {
+.descritp-chapter > p, .descritp-chapter > span {
+  text-align: justify;
+}
+.map-photo__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: calc(var(--index) / 2);
+  margin-bottom: calc(var(--index) / 2);
+}
+.map--wrap > img {
+  width: calc(var(--index) * 15);
+}
+.map--wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 calc(var(--index));
+  text-align: center;
+}
+.map-link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: calc(var(--index));
+  color: var(--color-header);
+  font-weight: bold;
+}
+.autors-photo {
+  font-family: serif;
+  font-size: var(--index);
+  color: var(--color-text);
+  font-style: italic;
+}
+
+/* .photo-chapter {
   min-width: 30%;
   height: 100%;
 }
@@ -186,7 +225,7 @@ body {
   min-width: 60%;
   max-width: 90%;
   max-height: 100%;
-}
+} */
 
 .map-wraper {
   height: calc(var(--index) * 24);
@@ -199,4 +238,18 @@ body {
   height: 100%;
   background-color: white;
   margin: 5vh 0 5vw 5vw;
+}
+.title-wrap {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.title-name {
+  font-size: calc(var(--index) * 2);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--color-header);
+  letter-spacing: var(--index);
 }

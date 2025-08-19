@@ -1,0 +1,16 @@
+.high {
+  width: calc(var(--index) * 8);
+}
+
+.right {
+  float: right;
+  margin-left: 0.5vw
+}
+
+.low {
+  width: calc(var(--index) * 6);
+}
+
+.clear  {
+  clear: right;
+}
