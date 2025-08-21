@@ -7,10 +7,18 @@
   margin-left: 0.5vw
 }
 
+.left {
+  float: left;
+  margin-right: 0.5vw;
+}
+
 .low {
   width: calc(var(--index) * 6);
 }
 
 .clear  {
   clear: right;
+}
+.clear-left {
+  clear: left;
 }
