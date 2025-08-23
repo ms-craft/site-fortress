@@ -58,15 +58,54 @@
             <div class="descript-photo-wrap">
                 <div class="descritp-chapter">
                       <!-- Заголовок -->
-                    <div class="toggle-btn">▶ Форты и форт Граф Берг</div>
+                    <div class="toggle-btn" id="1">▶ Форты</div>
 
                     <!-- Скрытый список -->
-                    <ul class="hidden-list">
-                        <li><span class="open-modal" data-modal="modal1">Форты</span></li>
-                        <li><span class="open-modal" data-modal="modal2">Форт граф берг</span></li>
-                        <li><span class="open-modal" data-modal="modal3">Пункт 3</span></li>
+                    <ul class="hidden-list" id="firstlist">
+                        <li><span class="open-modal" data-modal="modal1">Общение сведения о фортах</span></li>
+                        <li><span class="open-modal" data-modal="modal2">Форт «Граф берг»</span></li>
+                        <div class="toggle-btn" id="2">▶ Форты первой оборотинельной линии</div>
+                        <ul class="hidden-list" id="secondlist">
+                            <li><span class="open-modal" data-modal="modal3">Форт I</span></li>
+                            <li><span class="open-modal" data-modal="modal4">Форт II</span></li>
+                            <li><span class="open-modal" data-modal="modal5">Форт III</span></li>
+                            <li><span class="open-modal" data-modal="modal6">Форт IV</span></li>
+                            <li><span class="open-modal" data-modal="modal7">Форт V</span></li>
+                            <li><span class="open-modal" data-modal="modal8">Форт IX</span></li>
+                        </ul>
+                        <div class="toggle-btn" id="3">▶ Форты второй оборотинельной линии</div>
+                        <ul class="hidden-list" id="thirdlist">
+                            <li><span class="open-modal" data-modal="modalA">Форт А</span></li>
+                            <li><span class="open-modal" data-modal="modalB">Форт VII-Б</span></li>
+                            <li><span class="open-modal" data-modal="modalC">Форт В</span></li>
+                            <li><span class="open-modal" data-modal="modalD">Форт Г</span></li>
+                            <li><span class="open-modal" data-modal="modalE">Форт X-Д</span></li>
+                            <li><span class="open-modal" data-modal="modalF">Форт E</span></li>
+                            <li><span class="open-modal" data-modal="modalG">Форт Ж</span></li>
+                            <li><span class="open-modal" data-modal="modalH">Форт З</span></li>
+                            <li><span class="open-modal" data-modal="modalI">Форт И</span></li>
+                            <li><span class="open-modal" data-modal="modalJ">Форт К</span></li>
+                            <li><span class="open-modal" data-modal="modalK">Форт Л</span></li>
+                            <li><span class="open-modal" data-modal="modalL">Форт Н</span></li>
+                        </ul>
                     </ul>
 
+                    <div class="toggle-btn" id="4">▶ Оборонительные казармы</div>
+                         <ul class="hidden-list" id="list2">
+                        <li><span class="open-modal" data-modal="kazarma0">Общение сведения об оборонительных казармах</span></li>
+                        <div class="toggle-btn" id="5">▶ Оборонительные казармы</div>
+                        <ul class="hidden-list" id="list2child">
+                            <li><span class="open-modal" data-modal="kazarma1">Оборонительная казарма А-Б</span></li>
+                            <li><span class="open-modal" data-modal="kazarma2">Оборонительная казарма Б-В</span></li>
+                            <li><span class="open-modal" data-modal="kazarma3">Оборонительная казарма В-Г</span></li>
+                            <li><span class="open-modal" data-modal="kazarma4">Оборонительная казарма Ж-З</span></li>
+                            <li><span class="open-modal" data-modal="kazarma5">Оборонительная казарма К-О</span></li>
+                        </ul>
+                    </ul>
+
+                    <div class="open-modal" data-modal="def">Опорные пункты</div>
+                    <div class="open-modal" data-modal="basement">Пороховые погреба</div>
+                    <div class="open-modal" data-modal="batteries">Артиллерийские батареи</div>
                     <!-- Модальные окна -->
                     <div id="modal1" class="modal">
                         <div class="modal-content">
@@ -113,19 +152,488 @@
 
                     <div id="modal2" class="modal">
                         <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <h2>Заголовок 2</h2>
-                        <p>Тут твой текст + картинки для второго пункта</p>
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт «Граф берг»</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
                         </div>
                     </div>
 
                     <div id="modal3" class="modal">
                         <div class="modal-content">
-                        <span class="close-btn">&times;</span>
-                        <h2>Заголовок 3</h2>
-                        <p>Тут твой текст + картинки для третьего пункта</p>
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт I</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
                         </div>
                     </div>
+
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт II</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal5" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт III</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal6" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт IV</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal7" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт V</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modal8" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт IX</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modalA" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт A</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modalB" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт VII-Б</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modalC" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт В</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modalD" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт Г</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="modalE" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт X-Д</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="modalF" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт E</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="modalG" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт Ж</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="modalH" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт З</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div id="modalI" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт И</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>                    
+
+
+                    <div id="modalJ" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт К</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>        
+                    
+                    <div id="modalK" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт Л</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div id="modalL" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Форт Н</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>        
+
+                    <div id="kazarma0" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Общие сведения об оборонительных казармах</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>        
+
+
+                    <div id="kazarma1" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Оборонительная казарма А-Б</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>        
+
+                    <div id="kazarma2" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Оборонительная казарма Б-В</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>     
+
+                    <div id="kazarma3" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Оборонительная казарма В-Г</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>     
+
+                    <div id="kazarma4" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Оборонительная казарма Ж-З</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>     
+
+                    <div id="kazarma5" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Оборонительная казарма К-О</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>    
+
+
+                    <div id="def" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Опорные пункты</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>    
+
+
+                    <div id="basement" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Пороховые погреба</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+
+                <div id="batteries" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="name-close-wrap">
+                                    <h2>Артиллерийские батареи</h2>
+                                    <div class="close-wrap">
+                                        <span class="close-btn">&times;</span>
+                                    </div>
+                                </div>
+                                
+                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+
+                            </div>
+                        </div>
+                    </div>    
                 </div>
 
             </div>

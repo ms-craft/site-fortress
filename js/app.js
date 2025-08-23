@@ -1,6 +1,26 @@
 // раскрытие/скрытие списка
-document.querySelector('.toggle-btn').addEventListener('click', function() {
-    const list = document.querySelector('.hidden-list');
+document.getElementById('1').addEventListener('click', function() {
+    const list = document.getElementById('firstlist');
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+});
+
+document.getElementById('2').addEventListener('click', function() {
+    const list = document.getElementById('secondlist');
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+});
+
+document.getElementById('3').addEventListener('click', function() {
+    const list = document.getElementById('thirdlist');
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+});
+
+document.getElementById('4').addEventListener('click', function() {
+    const list = document.getElementById('list2');
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+});
+
+document.getElementById('5').addEventListener('click', function() {
+    const list = document.getElementById('list2child');
     list.style.display = list.style.display === 'block' ? 'none' : 'block';
 });
 
