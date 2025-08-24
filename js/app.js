@@ -20,7 +20,7 @@ document.getElementById('4').addEventListener('click', function() {
 });
 
 document.getElementById('5').addEventListener('click', function() {
-    const list = document.getElementById('secondlist');
+    const list = document.getElementById('list_graf');
     list.style.display = list.style.display === 'block' ? 'none' : 'block';
 });
 
