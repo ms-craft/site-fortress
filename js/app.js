@@ -19,6 +19,11 @@ document.getElementById('4').addEventListener('click', function() {
     list.style.display = list.style.display === 'block' ? 'none' : 'block';
 });
 
+document.getElementById('5').addEventListener('click', function() {
+    const list = document.getElementById('secondlist');
+    list.style.display = list.style.display === 'block' ? 'none' : 'block';
+});
+
 // открытие модалок
 document.querySelectorAll('.open-modal').forEach(item => {
     item.addEventListener('click', function() {

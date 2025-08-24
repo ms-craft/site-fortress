@@ -63,7 +63,11 @@
                     <!-- Скрытый список -->
                     <ul class="hidden-list" id="firstlist">
                         <li><span class="open-modal" data-modal="modal1">Общение сведения о фортах</span></li>
-                        <li><span class="open-modal" data-modal="modal2">Первый внешний форт</span></li>
+                        <div class="toggle-btn" id="5">▶ Первый внешний форт</div>
+                         <ul class="hidden-list" id="secondlist">
+                            <li><span class="open-modal" data-modal="modal2">Форт «Граф Берг»</span></li>
+
+                        </ul>
                         <div class="toggle-btn" id="2">▶ Форты первой оборонительной линии</div>
                         <ul class="hidden-list" id="secondlist">
                             <li><span class="open-modal" data-modal="modal3">Форт I</span></li>
@@ -73,18 +77,18 @@
                             <li><span class="open-modal" data-modal="modal7">Форт V</span></li>
                             <li><span class="open-modal" data-modal="modal9">Форт VI</span></li>
                             <li><span class="open-modal" data-modal="modal10">Форт VII</span></li>
-                            <li><span class="open-modal" data-modal="modal11">Форт VIII-(Б)</span></li>
+                            <li><span class="open-modal" data-modal="modal11">Форт VIII (Б)</span></li>
                             <li><span class="open-modal" data-modal="modal8">Форт IX</span></li>
-                            <li><span class="open-modal" data-modal="modalE">Форт X-Д</span></li>
+                            <li><span class="open-modal" data-modal="modalE">Форт X (Д)</span></li>
 
                         </ul>
                         <div class="toggle-btn" id="3">▶ Форты второй оборонительной линии</div>
                         <ul class="hidden-list" id="thirdlist">
                             <li><span class="open-modal" data-modal="modalA">Форт А</span></li>
-                            <li><span class="open-modal" data-modal="modal11">Форт VII-(Б)</span></li>
+                            <li><span class="open-modal" data-modal="modal11">Форт VII (Б)</span></li>
                             <li><span class="open-modal" data-modal="modalC">Форт В</span></li>
                             <li><span class="open-modal" data-modal="modalD">Форт Г</span></li>
-                            <li><span class="open-modal" data-modal="modalE">Форт X-(Д)</span></li>
+                            <li><span class="open-modal" data-modal="modalE">Форт X (Д)</span></li>
                             <li><span class="open-modal" data-modal="modalF">Форт E</span></li>
                             <li><span class="open-modal" data-modal="modalG">Форт Ж</span></li>
                             <li><span class="open-modal" data-modal="modalH">Форт З</span></li>
@@ -208,12 +212,12 @@
                             
                                 <div class="map-photo__wrap">
                                     <div class="map--wrap">
-                                        <img src="img/fort/map3.png" alt="">
+                                        <img src="img/fort/map4.png" alt="">
                                         <a class= "map-link" href="http://www.etomesto.ru/map-belarus_brest_sputnik/?y=52.119806&x=23.625993">Форт I,<br>спутниковый снимок, 1966 г.</a>
                                     </div>
                                     <div class="map--wrap">
-                                        <img src="img/fort/map4.png" alt="">
-                                        <a class= "map-link" href="https://www.google.ru/maps/place/%D0%A4%D0%BE%D1%80%D1%82+1,+%D0%91%D1%80%D0%B5%D1%81%D1%82,+%D0%91%D1%80%D0%B5%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@52.1200568,23.6238897,519m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4721098a9a086329:0x8c4b74360d4be919!8m2!3d52.1200568!4d23.6264646!16s%2Fg%2F12hqvp75n!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D">Форт I<br>спутниковый снимок, 2025 г.</a>
+                                        <img src="img/fort/map3.png" alt="">
+                                        <a class= "map-link" href="https://www.google.ru/maps/place/%D0%A4%D0%BE%D1%80%D1%82+1,+%D0%91%D1%80%D0%B5%D1%81%D1%82,+%D0%91%D1%80%D0%B5%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@52.1200568,23.6238897,519m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4721098a9a086329:0x8c4b74360d4be919!8m2!3d52.1200568!4d23.6264646!16s%2Fg%2F12hqvp75n!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDgxMS4wIKXMDSoASAFQAw%3D%3D">Форт I, <br>спутниковый снимок, 2025 г.</a>
                                     </div>
                                 </div>
 
@@ -232,11 +236,25 @@
                             <div class="modal-body">
                                 <div class="modal-header">
                                     <h2>Форт II</h2>
-                                    
-                                        <span class="close-btn">&times;</span>
+                                    <span class="close-btn">&times;</span>
                                 </div>
                                 
-                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+                                <p>Построен в 1878–1880 гг. примерно в 3 км на северо-восток от Брестской крепости, около бывшей д. Граевка, в 1929 г. ставшей микрорайоном города. Форт II Брестской крепости был построен по тому же проекту, что и форты I и III. В отличие от форта I, в его горжевой части располагались три земляных траверса. </p>
+                                <p>Во время оккупации 1941–44 гг. стал местом массовых расстрелов фашистами жителей Бреста. В послевоенное время попал в промышленную застройку и был полностью уничтожен. На соответствующей территории размещаются главным образом промышленно‑складские объекты.</p>
+
+                                <div class="map-photo__wrap">
+                                    <div class="map--wrap">
+                                        <img src="img/fort/map7.png" alt="">
+                                        <a class= "map-link" href="">Форт II,<br>спутниковый снимок, 1966 г.</a>
+                                    </div>
+                                    <div class="map--wrap">
+                                        <img src="img/fort/map6.png" alt="">
+                                        <a class= "map-link" href="">Форт II,<br>спутниковый снимок, 2025 г.</a>
+                                    </div>
+                                </div>
+
+                                <img src="img/fort/Photo16.png" class="adaptive-img" alt="">
+                                <p class="autors-photo">(Источник: Яндекс карты)</p>
 
                             </div>
                         </div>
@@ -248,11 +266,14 @@
                             <div class="modal-body">
                                 <div class="modal-header">
                                     <h2>Форт III</h2>
-                                    
-                                        <span class="close-btn">&times;</span>
+                                    <span class="close-btn">&times;</span>
                                 </div>
                                 
-                                <p>TEXT Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, aspernatur.</p>
+                                <p>Построен в 1878–1880 гг. примерно в 4 км на восток от Брестской крепости, около бывшей д. Тришин, в 1968 г. ставшей районом города. Форт III был построен по типовому проекту «Укрепление № 2», общему для фортов I и II.</p>
+                                <p>Летом 1915 г. здесь размещались подразделения 12-й роты и 19-я рота Брест-Литовской крепости. В землянках около форта располагалась 2-я рота 642-й пешей Волынской дружины 87-й бригады Государственного ополчения. Русские части, отступавшие в 1915 г, вывезли вооружение и оставили форт в целостности.</p>
+                                <p>Во время Второй мировой войны форт стал местом массового расстрела мирных жителей. После освобождения города между валами были найдены останки почти 1000 человек.</p>
+                                <p>В первой половине 1960-х гг. форт практически полностью был уничтожен, попав в границы формируемого Брестского Восточного промышленного узла. На месте форта в 1963–1965 гг. были возведены корпуса электромеханического завода. Сохранились лишь три кирпичных каземата, приспособленные под хозяйственные нужды.</p>
+                    
 
                             </div>
                         </div>
@@ -407,7 +428,7 @@
                             
                             <div class="modal-body">
                                 <div class="modal-header">
-                                    <h2>Форт X-Д</h2>
+                                    <h2>Форт X (Д)</h2>
                                     
                                         <span class="close-btn">&times;</span>
                                 </div>
@@ -723,5 +744,4 @@
 
     <script src="js/app.js"></script>
 </body>
-
 </html>
