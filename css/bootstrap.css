@@ -22,3 +22,6 @@
 .clear-left {
   clear: left;
 }
+.adaptive-img {
+  max-width: 100%;
+}
