@@ -16,6 +16,14 @@
   font-style: normal;
 }
 
+.oswald-bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 @font-face {
   font-family: raleway-c;
   src: url(../fonts/raleway-regular.woff2);
@@ -183,7 +191,7 @@ body {
   height: min-content;
   font-size: calc(var(--index));
   color: #222222;
-  font-family: Aptos;
+  /* font-family: Aptos; */
 }
 
 .descritp-chapter > p, .descritp-chapter > span {
@@ -297,6 +305,10 @@ body {
   position: relative;
   max-height: 80vh;
   overflow-y: auto;
+
+  font-family: "Poiret One", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .close-btn {
