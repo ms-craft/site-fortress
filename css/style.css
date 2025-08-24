@@ -296,20 +296,17 @@ body {
 }
 
 .close-btn {
-
   font-size: calc(var(--index));
   cursor: pointer;
+  /* display: flex;
+  align-items: center; */
+}
+
+.modal-header {
   display: flex;
+  justify-content: space-between; /* заголовок слева, крестик справа */
   align-items: center;
-}
-.close-wrap {
-  width: 100%;
-  justify-content: right;
-  display: flex;
-}
-.name-close-wrap {
-  display: flex;
-  width: 100%;
+  margin-bottom: 15px; /* отступ от текста */
 }
 
 .open-modal {
