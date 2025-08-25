@@ -18,13 +18,6 @@
   font-style: normal;
 }
 
-.oswald-bold {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 @font-face {
   font-family: raleway-c;
@@ -193,7 +186,11 @@ body {
   height: min-content;
   font-size: calc(var(--index));
   color: #222222;
-  /* font-family: Aptos; */
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .descritp-chapter > p, .descritp-chapter > span {
