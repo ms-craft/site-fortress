@@ -186,7 +186,9 @@ body {
   height: min-content;
   font-size: calc(var(--index));
   color: #222222;
+}
 
+.descritp-chapter > ul, .descritp-chapter > .toggle-btn {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
