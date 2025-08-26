@@ -181,6 +181,9 @@ body {
   height: min-content;
   font-size: calc(var(--index));
   color: #222222;
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .descritp-chapter > ul, .descritp-chapter > .toggle-btn {
@@ -216,6 +219,12 @@ body {
   font-size: calc(var(--index));
   color: #222222;
   font-weight: bold;
+}
+.btn-regular {
+  font-family: "Oswald", sans-serif !important;;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .autors-photo {
   font-family: serif;
