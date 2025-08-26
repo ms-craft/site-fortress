@@ -24,6 +24,8 @@ document.querySelectorAll('.open-modal').forEach(item => {
     item.addEventListener('click', function() {
     const modalId = this.getAttribute('data-modal');
     document.getElementById(modalId).style.display = 'flex';
+
+    document.body.classList.add('modal-open');
     });
 });
 
@@ -31,6 +33,8 @@ document.querySelectorAll('.open-modal').forEach(item => {
 document.querySelectorAll('.close-btn').forEach(btn => {
     btn.addEventListener('click', function() {
     this.closest('.modal').style.display = 'none';
+
+    document.body.classList.remove('modal-open');
     });
 });
 
@@ -38,5 +42,8 @@ document.querySelectorAll('.close-btn').forEach(btn => {
 window.addEventListener('click', function(e) {
     if (e.target.classList.contains('modal')) {
     e.target.style.display = 'none';
+
+    document.body.classList.remove('modal-open');
     }
 });
+

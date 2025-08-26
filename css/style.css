@@ -12,6 +12,13 @@
   --color-text: #cdc6c3;
 
 }
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+
 .rubik-mono-one-regular {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
@@ -57,7 +64,7 @@ body::-webkit-scrollbar {
 .menu-main a {
   text-decoration: none;
   font-family: 'Ubuntu Condensed', sans-serif;
-  letter-spacing: calc(var(--index) / 10);
+  letter-spacing: calc(var(--index) / 5);
   position: relative;
   padding-bottom: calc(var(--index) / 10);
   margin: 0 var(--index) 0 var(--index);
