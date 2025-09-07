@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бресткая крепость</title>
+    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
     
@@ -12,9 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     
-    <?xml version="1.0" standalone="no"?>
-
-
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=3968be09-9983-41a1-a5a2-625e24414d86&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
 
 </head>
 <body>
@@ -46,20 +47,81 @@
             </div>
         </header>
 
-        <div class="content">
+        <div class="content" style="height: 70vh !important;">
             <div class="name-chapter__wrap">
                 <div class="name-chapter">
                     Интерактивная карта
                 </div>
             </div>
-            <div class="map-wraper">
-                <div class="iframe-map"></div>
+
+            <div class="descript-photo-wrap">
+                <div class="descritp-chapter">
+                    <div id="map"></div>
+
+                    <div id="kazarma5" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="modal-header">
+                                    <h2>Оборонительная казарма К-О</h2>
+                                    
+                                    <span class="close-btn">&times;</span>
+                                </div>
+                                
+                                <p>Оборонительная казарма «К–О» построена в 1912–1914 гг. по типовому проекту, аналогичному оборонительной казарме «Ж-З», в 6 км на запад от крепости. Казарма расположена на стыке фортов «О» и «К», обеспечивая промежуточный узел обороны между ними. Объект имеет высокую степень сохранности. Находится на территории Люблинского воеводства Республики Польша. </p>
+
+                                <div class="map-photo__wrap">
+                                    <div class="map--wrap">
+                                        <img src="img/fort/kazarma/map9.png" alt="">
+                                        <a class= "map-link" href="https://www.google.ru/maps/place/52%C2%B003'10.5%22N+23%C2%B033'27.7%22E/@52.0529143,23.5551159,519m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d52.0529143!4d23.5576908!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D">Оборонительная казарма К-О,<br>спутниковый снимок, 2025 г.</a>
+                                    </div>
+                                </div>  
+
+                                <img src="img/fort/kazarma/Photo7.jpg" class="adaptive-img" alt="">
+                                <p class="autors-photo">(Источник: База данных «Наследие Брестской крепости», brestdatabase.by)</p>                                          
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="kazarma3" class="modal">
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <div class="modal-header">
+                                    <h2>Оборонительная казарма В-Г</h2>
+                                    <span class="close-btn">&times;</span>
+                                </div>
+
+                                <p>Оборонительная казарма «В–Г» построена в 1912–1914 гг. на расстоянии примерно 6 км на северо-восток от Брестской крепости. Находится на территории микрорайона «Плоска» в северной части Бреста. Основное назначение оборонительной казармы – усиление оборонительного потенциала в промежутке между фортами «В» и «Г».</p>
+                                <p>При отступлении русских войск в 1915 г. казарма была уничтожена. К настоящему времени сохранились лишь фрагменты стен.</p>
+                                
+                                <div class="map-photo__wrap">
+                                    <div class="map--wrap">
+                                        <img src="img/fort/kazarma/map5.png" alt="">
+                                        <a class= "map-link" href="http://www.etomesto.ru/map-belarus_brest_sputnik/?y=52.135542&x=23.711105">Оборонительная казарма В-Г,<br>спутниковый снимок, 1966 г.</a>
+                                    </div>
+                                    <div class="map--wrap">
+                                        <img src="img/fort/kazarma/map6.png" alt="">
+                                        <a class= "map-link" href="https://www.google.ru/maps/place/52%C2%B008'07.4%22N+23%C2%B042'40.1%22E/@52.135399,23.7104755,183m/data=!3m1!1e3!4m4!3m3!8m2!3d52.135391!4d23.711143!5m1!1e4?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D">Оборонительная казарма В-Г,<br>спутниковый снимок, 2025 г.</a>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>  
+
+
+                </div>
+
+
+
             </div>
         </div>
+        
+        
+
+
+
     </div>
     
-
-
-    <script src="js/app.js"></script>
 </body>
 </html>

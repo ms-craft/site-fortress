@@ -249,11 +249,11 @@ body {
   margin-top: var(--index);
 }
 
-.iframe-map {
+#map {
   width: 90%;
-  height: 100%;
-  background-color: white;
-  margin: 5vh 0 5vw 5vw;
+  height: 50vh;
+  /* background-color: white; */
+  margin: 5vh 0 0 5vw;
 }
 .title-wrap {
   width: 100vw;
