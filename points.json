@@ -4,48 +4,295 @@
       52.096938,
       23.642299
     ],
-    "modalId": "modal2"
+    "modalId": "modal2",
+    "color": null
   },
   {
     "coords": [
       52.1200568,
       23.6264646
     ],
-    "modalId": "modal3"
+    "modalId": "modal3",
+    "color": null
   },
   {
     "coords": [
       52.120513,
       23.686414
     ],
-    "modalId": "modal4"
+    "modalId": "modal4",
+    "color": null
   },
   {
     "coords": [
       52.097362,
       23.7350433
     ],
-    "modalId": "modal5"
+    "modalId": "modal5",
+    "color": null
   },
   {
     "coords": [
       52.063255,
       23.726099
     ],
-    "modalId": "modal6"
+    "modalId": "modal6",
+    "color": null
   },
   {
     "coords": [
       52.047446,
       23.67302
     ],
-    "modalId": "modal7"
+    "modalId": "modal7",
+    "color": null
   },
   {
     "coords": [
       52.110758,
       23.712817
     ],
-    "modalId": "modal8"
+    "modalId": "modal8",
+    "color": null
+  },
+  {
+    "coords": [
+      52.046109,
+      23.619067
+    ],
+    "modalId": "modal9",
+    "color": null
+  },
+  {
+    "coords": [
+      52.08025,
+      23.5958611
+    ],
+    "modalId": "modal10",
+    "color": null
+  },
+  {
+    "coords": [
+      52.125907,
+      23.650171
+    ],
+    "modalId": "modal11",
+    "color": null
+  },
+  {
+    "coords": [
+      52.121739,
+      23.611475
+    ],
+    "modalId": "modalA",
+    "color": null
+  },
+  {
+    "coords": [
+      52.139626,
+      23.684998
+    ],
+    "modalId": "modalC",
+    "color": null
+  },
+  {
+    "coords": [
+      52.131313,
+      23.730914
+    ],
+    "modalId": "modalD",
+    "color": null
+  },
+  {
+    "coords": [
+      52.1098034,
+      23.7469328
+    ],
+    "modalId": "modalE",
+    "color": null
+  },
+  {
+    "coords": [
+      52.0689167,
+      23.7765556
+    ],
+    "modalId": "modalF",
+    "color": null
+  },
+  {
+    "coords": [
+      52.046014,
+      23.748895
+    ],
+    "modalId": "modalG",
+    "color": null
+  },
+  {
+    "coords": [
+      52.032633,
+      23.701627
+    ],
+    "modalId": "modalH",
+    "color": null
+  },
+  {
+    "coords": [
+      52.015424,
+      23.652768
+    ],
+    "modalId": "modalI",
+    "color": null
+  },
+  {
+    "coords": [
+      52.043159,
+      23.55406
+    ],
+    "modalId": "modalJ",
+    "color": null
+  },
+  {
+    "coords": [
+      52.019409,
+      23.603883
+    ],
+    "modalId": "modalK",
+    "color": null
+  },
+  {
+    "coords": [
+      52.019409,
+      23.603883
+    ],
+    "modalId": "modalM",
+    "color": null
+  },
+  {
+    "coords": [
+      52.06458,
+      23.549252
+    ],
+    "modalId": "modalO",
+    "color": null
+  },
+  {
+    "coords": [
+      52.12011,
+      23.636464
+    ],
+    "modalId": "kazarma1",
+    "color": null
+  },
+  {
+    "coords": [
+      52.135084,
+      23.665297
+    ],
+    "modalId": "kazarma2",
+    "color": null
+  },
+  {
+    "coords": [
+      52.135391,
+      23.711143
+    ],
+    "modalId": "kazarma3",
+    "color": null
+  },
+  {
+    "coords": [
+      52.0438889,
+      23.7230556
+    ],
+    "modalId": "kazarma4",
+    "color": null
+  },
+  {
+    "coords": [
+      52.0529143,
+      23.5576908
+    ],
+    "modalId": "kazarma5",
+    "color": null
+  },
+  {
+    "coords": [
+      52.137339,
+      23.674635
+    ],
+    "modalId": "def",
+    "color": "green"
+  },
+  {
+    "coords": [
+      52.121416,
+      23.73093
+    ],
+    "modalId": "def",
+    "color": "green"
+  },
+  {
+    "coords": [
+      52.085986,
+      23.774834
+    ],
+    "modalId": "def",
+    "color": "green"
+  },
+  {
+    "coords": [
+      52.056109,
+      23.758955
+    ],
+    "modalId": "def",
+    "color": "green"
+  },
+  {
+    "coords": [
+      52.037454,
+      23.710173
+    ],
+    "modalId": "def",
+    "color": "green"
+  },
+  {
+    "coords": [
+      52.111282,
+      23.643638
+    ],
+    "modalId": "basement",
+    "color": "violet"
+  },
+  {
+    "coords": [
+      52.107901,
+      23.69243
+    ],
+    "modalId": "basement",
+    "color": "violet"
+  },
+  {
+    "coords": [
+      52.074527,
+      23.73936
+    ],
+    "modalId": "basement",
+    "color": "violet"
+  },
+  {
+    "coords": [
+      52.060927,
+      23.689248
+    ],
+    "modalId": "basement",
+    "color": "violet"
+  },
+  {
+    "coords": [
+      52.043703,
+      23.70457
+    ],
+    "modalId": "basement",
+    "color": "violet"
   }
 ]
