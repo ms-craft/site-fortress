@@ -23,7 +23,7 @@
   clear: left;
 }
 .adaptive-img {
-  max-width: 100%;
+  max-width: 90%;
   min-width: 50%;
 }
 .center-text {
