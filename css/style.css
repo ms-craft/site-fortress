@@ -196,6 +196,12 @@ body {
 .descritp-chapter > p, .descritp-chapter > span {
   text-align: justify;
 }
+
+.ui-wrapper {
+  height: min-content;
+  display: flex;
+}
+
 .map-photo__wrap {
   width: 100%;
   display: flex;
@@ -283,6 +289,12 @@ body {
   list-style-type: disc;
   margin-left: calc(var(--index) * 4);
 }
+
+.defers-list {
+  list-style-type: disc;
+  margin-left: calc(var(--index) * 2);
+}
+
 #secondlist,
 #thirdlist {
   list-style-type: square;
