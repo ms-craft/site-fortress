@@ -164,7 +164,7 @@ body {
   font-size: calc(var(--index) * 2.2);
   padding: calc(var(--index) / 4) 0 0 var(--index);
   font-family: "Rubik Mono One", monospace;
-  line-height: 90%;
+  /* line-height: 90%; */
 }
 
 .descript-photo-wrap {
@@ -203,12 +203,13 @@ body {
 }
 
 .map-photo__wrap {
-  width: 100%;
+  width: calc(100% - var(--index));
   display: flex;
   justify-content: center;
   margin-top: calc(var(--index) / 2);
   margin-bottom: calc(var(--index) / 2);
 }
+
 .map--wrap > img {
   width: calc(var(--index) * 15);
 }
