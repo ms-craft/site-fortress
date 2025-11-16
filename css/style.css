@@ -174,6 +174,7 @@ body {
   margin: 0 0 0 var(--index);
   text-indent: calc(var(--index));
   text-align: justify;
+
 }
 
 .descritp-chapter {
@@ -296,6 +297,10 @@ body {
   margin-left: calc(var(--index) * 2);
 }
 
+.source-list {
+  margin-left: calc(var(--index) * 2);
+}
+
 #secondlist,
 #thirdlist {
   list-style-type: square;
@@ -378,4 +383,3 @@ body {
   display: flex;
   justify-content: center;
 }
-

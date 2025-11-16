@@ -1,0 +1,34 @@
+@media (max-width: 821px) {
+    .map-photo__wrap {
+        width: 100%;
+    }
+}
+
+@media (max-width: 744px) {
+    .map--wrap {
+        margin: 0;
+        margin-right: calc(var(--index));
+    } 
+    .map-photo__wrap .map--wrap:last-child {
+        margin: 0;
+  }
+}
+
+@media(max-width: 680px) {
+    .map--wrap {
+        margin: 0;
+        margin-right: calc(var(--index) / 2);
+    } 
+}
+
+@media(max-width: 665px) {
+   .map--wrap > img {
+        width: calc(var(--index) * 14);
+   } 
+}
+
+@media(max-width: 599px) {
+   .map--wrap > img {
+        width: calc(var(--index) * 12);
+   } 
+}
