@@ -167,6 +167,15 @@ body {
   line-height: 90%;
 }
 
+.excursions {
+  color: #646464;
+  font-size: calc(var(--index));
+  padding: calc(var(--index) / 4) 0 0 var(--index);
+  text-align: center;
+  font-family: "Rubik Mono One", monospace;
+  line-height: 90%;
+}
+
 .mobile-fix {
   height: 10vh;
 }
