@@ -169,7 +169,7 @@ body {
 
 .excursions {
   color: #646464;
-  font-size: calc(var(--index));
+  font-size: calc(var(--index) * 1.12);
   padding: calc(var(--index) / 4) 0 0 var(--index);
   text-align: center;
   font-family: "Rubik Mono One", monospace;
@@ -434,4 +434,9 @@ tr:hover {
 .distance {
     text-align: center;
     font-weight: bold;
+}
+.points-map {
+  width: 100%;
+  display: flex;
+  height: min-content;
 }
