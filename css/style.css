@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
 .menu-main a {
   text-decoration: none;
   font-family: 'Ubuntu Condensed', sans-serif;
-  letter-spacing: calc(var(--index) / 5);
+  letter-spacing: calc(var(--index) / 10);
   position: relative;
   padding-bottom: calc(var(--index) / 10);
   margin: 0 var(--index) 0 var(--index);
@@ -196,7 +196,7 @@ body {
   font-size: calc(var(--index));
   color: #222222;
   font-family: "Bellota Text", sans-serif;
-  font-weight: 800;
+  font-weight: normal;
   font-style: normal;
 }
 
