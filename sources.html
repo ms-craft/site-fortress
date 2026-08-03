@@ -15,33 +15,25 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
-    <link rel="stylesheet" href="css/adaptive-map.css">
 
     <?xml version="1.0" standalone="no"?>
 
 </head>
 <body>
     <div class="wrapper">
-        <div class="title-wrap">
-            <div class="logo-wrap">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="title-name">
-                Брестская фортеция
-            </div>
-        </div>
         <header>
-            <div class="logo-wrapper">
-                <a href="index.html" class="logo-link">
-                <svg class="icon-home homepage--unactive" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"/>
-                </svg>
-                </a>
+            <div class="title-wrap">
+                <div class="logo-wrap">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="title-name">
+                    Брестская фортеция
+                </div>
             </div>
-
             <div class="menu-wrapper">
                 
                 <ul class="menu-main">
+                    <li><a href="index.html">Интерактивная карта</a></li>
                     <li><a href="history.html">История крепости</a></li>
                     <li><a href="forts.html">Фортификационные сооружения</a></li>
                     <li><a href="defenders.html">Защитники Брестской крепости</a></li>
@@ -50,10 +42,30 @@
                     <li><a href="" class="current">Библиография</a></li>
                 </ul>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
+        <div class="compact-bar">
+            <div class="title-wrap">
+                <div class="logo-wrap">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="title-name">
+                    Брестская фортеция
+                </div>
+            </div>
+            <button class="hamburger" id="compact-hamburger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
 
         <div class="content">
-            <div class="name-chapter__wrap mobile-fix">
+            <div class="name-chapter__wrap">
                 <div class="name-chapter">
                     Библиография
                 </div>
@@ -90,30 +102,13 @@
                     
 
 
-                    <!-- <div class="ui-wrapper">
-                        <ol class="source-list">
-                            <li><span>Бешанов, В. В. Брестская крепость. Правда о легендарной обороне / В. В. Бешанов. – М. : Яуза, 2021. – 352 с.</span></li>
-                            <li><span>Лукашевич, А. М. "Здешнюю границу... пристойными укреплениями сделать благонадежнее": проекты фортификационного прикрытия западных рубежей Российской империи 1795–1796 г.  / А. М. Лукашевич. – Военно-исторический журнал. – 2017. – № 5. – С. 47–51.</span></li>
-                            <li><span>Столетие Военного министерства: 1802–1902: конспекты исторических очерков столетия Военного министерства / глав. ред. [и авт. предисл.] ген.-лейт. Д. А. Скалон. – СПб : Типография поставщиков Двора Его Императорского Величества товарищества М. О. Вольф, 1906. –1208 с.</span></li>
-                            <li><span>Яковлев, В. В. История крепостей / В. В. Яковлев. – М. : АСТ, 2000. – 400 с.</span></li>
-                            <li><span>Мощанский, И. Б. Трагедия Брестской крепости. Антология подвига. 22 июня – 23 июля 1941 года / И. Б. Мощанский. – М. : Вече, 2010. – 128 с. </span></li>
-                            <li><span>База данных «Наследие Брестской крепости» // Местный благотворительный фонд «Фонд развития Брестской крепости». – URL: https://brestdatabase.by (дата обращения: 15.07.2025).</span></li>
-                            <li><span>Форты Брестской крепости // ГУК «Брестская центральная городская библиотека им. А. С. Пушкина». – URL: https://gcbs-brest.by/forty-brestskoj-kreposti#:~:text=%D0%92%201864%20%D0%B3.%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0%D1%81%D1%8C%20%D1%80%D0%B5%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F,%D0%BF%D0%BE%D0%B7%D0%B0%D0%B4%D0%B8%20%D0%B4%D0%B2%D1%83%D1%85%20%D0%B1%D0%B0%D1%81%D1%82%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%20%D0%9A%D0%BE%D0%B1%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%83%D0%BA%D1%80%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F (дата обращения: 15.07.2025).</span></li>
-                            <li><span>Оборонительные сооружения Брестской крепости : [сайт]. – М., 2005–2006. – URL: https://brest-forts.narod.ru (дата обращения: 22.07.2025).</span></li>
-                            <li><span>Суворов, А. М. Форт V и другие форты Брестской крепости / А. М. Суворов ; фото : В. В. Байковский [и др.]. – 2-е изд., доп. – Брест : Полиграфика, 2024. – 68 с.: ил.</span></li>
-                            <li><span>В Бресте открыли мемориальную доску на входе в Брестский мясокомбинат // Брестская областная газета «Заря». – URL: https://zarya.by/news/community/v-breste-otkryli-memorialnuju-dosku-na-vhode-v-brestskij-mjasokombinat (дата обращения: 28.01.2025).</span></li>
-                            <li><span></span></li>
 
-                        </ol>
-                    </div> -->
                 </div>
 
                 
             </div>
         </div>
     </div>
-    
-
-
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -18,30 +18,25 @@
     
     <script src="https://api-maps.yandex.ru/2.1/?apikey=3968be09-9983-41a1-a5a2-625e24414d86&lang=ru_RU"></script>
     <script src="js/map.js"></script>
+    <script src="js/app.js"></script>
 
     
 
 </head>
 <body>
     <div class="wrapper">
-        <div class="title-wrap">
-            <div class="logo-wrap">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="title-name">
-                Брестская фортеция
-            </div>
-        </div>
         <header>
-            <div class="logo-wrapper">
-                <a href="index.html" class="logo-link">
-                <svg class="icon-home homepage--unactive" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"/>
-                </svg>
-                </a>
+            <div class="title-wrap">
+                <div class="logo-wrap">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="title-name">
+                    Брестская фортеция
+                </div>
             </div>
             <div class="menu-wrapper">
                 <ul class="menu-main">
+                    <li><a href="index.html">Интерактивная карта</a></li>
                     <li><a href="history.html">История крепости</a></li>
                     <li><a href="forts.html">Фортификационные сооружения</a></li>
                     <li><a href="defenders.html">Защитники Брестской крепости</a></li>
@@ -50,7 +45,27 @@
                     <li><a href="sources.html">Библиография</a></li>
                 </ul>
             </div>
+            <button class="hamburger" id="hamburger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </header>
+        <div class="compact-bar">
+            <div class="title-wrap">
+                <div class="logo-wrap">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="title-name">
+                    Брестская фортеция
+                </div>
+            </div>
+            <button class="hamburger" id="compact-hamburger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
 
         <div class="content">
             <div class="name-chapter__wrap">

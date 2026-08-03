@@ -3,16 +3,16 @@ fetch('points.json')
   .then(points => {
     ymaps.ready(() => {
       const myMap = new ymaps.Map("map", {
-        center: points[0].coords, // центр на первой точке
+        center: points[0].coords,
         zoom: 13,
         type: "yandex#satellite"
       });
 
        points.forEach(p => {
-        let iconPreset = 'islands#redIcon'; // дефолт — красный
+        let iconPreset = 'islands#redIcon';
 
         if (p.modalId && p.modalId.startsWith("kazarma")) {
-          iconPreset = 'islands#blueIcon'; // для казарм — голубой
+          iconPreset = 'islands#blueIcon';
         }
 
         if (p.color) {
@@ -33,29 +33,18 @@ fetch('points.json')
         placemark.events.add('click', () => {
           document.getElementById(p.modalId).style.display = 'flex';
           document.body.classList.add('modal-open');
+          var h = document.getElementById('hamburger');
+          var ch = document.getElementById('compact-hamburger');
+          var mw = document.querySelector('.menu-wrapper');
+          if (h) h.classList.remove('active');
+          if (ch) ch.classList.remove('active');
+          if (mw) mw.classList.remove('active');
         });
 
         myMap.geoObjects.add(placemark);
       });
     });
   });
-
-// ---- закрытие модалок
-// document.querySelectorAll('.close-btn').forEach(btn => {
-//   btn.addEventListener('click', function() {
-//     this.closest('.modal').style.display = 'none';
-//     document.body.classList.remove('modal-open');
-//   });
-// });
-
-
-// // ---- клик по фону
-// window.addEventListener('click', function(e) {
-//   if (e.target.classList.contains('modal')) {
-//     e.target.style.display = 'none';
-//     document.body.classList.remove('modal-open');
-//   }
-// });
 
 document.addEventListener('click', function(e) {
   const closeBtn = e.target.closest('.close-btn');
@@ -65,7 +54,7 @@ document.addEventListener('click', function(e) {
       modal.style.display = 'none';
       document.body.classList.remove('modal-open');
     }
-    return; // обработка завершена
+    return;
   }
 
   const modalBg = e.target.closest('.modal');
