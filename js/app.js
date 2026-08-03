@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (h) h.classList.remove('active');
             if (ch) ch.classList.remove('active');
             if (mw) mw.classList.remove('active');
+            if (header) header.classList.remove('menu-open');
         });
     });
 

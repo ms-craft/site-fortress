@@ -39,6 +39,8 @@ fetch('points.json')
           if (h) h.classList.remove('active');
           if (ch) ch.classList.remove('active');
           if (mw) mw.classList.remove('active');
+          var hdr = document.querySelector('header');
+          if (hdr) hdr.classList.remove('menu-open');
         });
 
         myMap.geoObjects.add(placemark);
